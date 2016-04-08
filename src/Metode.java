@@ -16,5 +16,14 @@ public class Metode {
 		}
 		return sum/n.length;
 	}
+	
+	//util Arrays sort zato sto sam lijen ko top
+	public double [] sortiraj (double [] niz )
+	{
+		 java.util.Arrays.sort(niz);
+		 return niz;
+	}
+	
+	
 
 }
