@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+*.class
+
+.settings
+.classpath
+.project
+
+=======
 # Created by https://www.gitignore.io/api/eclipse,java
 
 ### Eclipse ###
@@ -57,6 +65,7 @@ local.properties
 ### Java ###
 *.class
 
+>>>>>>> efa0f3ed784eee44260df73202dd053b9a443a83
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
@@ -67,5 +76,8 @@ local.properties
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> efa0f3ed784eee44260df73202dd053b9a443a83
