@@ -6,7 +6,7 @@ public class OperacijeNadNizom {
 		Scanner in = new Scanner(System.in);
 		// niz od 10 brojeva
 		double[] n = new double[10];
-		// popunjavanje niza
+		
 		System.out.println("***POPUNJAVANJE NIZA***");
 		for(int i = 0; i < n.length; i++) {
 			try {
@@ -26,6 +26,9 @@ public class OperacijeNadNizom {
 		System.out.println("Prosjek brojeva u nizu = " + m.average(n));
 		// ostale metode
 		
+		double[] unikatan = m.unikatanNiz(n);
+		System.out.println("niz brojeva je "+Arrays.toString(n));
+		System.out.println("unikatan niz b "+Arrays.toString(unikatan));
 		in.close();
 	}
 

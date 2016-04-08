@@ -1,3 +1,4 @@
+import java.util.HashSet;
 
 public class Metode {
 	// suma brojeva u nizu
@@ -24,6 +25,47 @@ public class Metode {
 		 return niz;
 	}
 	
+	/**
+	 * Napravi novi niz koji sadrzi unikatne brojeve
+	 * eto ovaj sam malo zakomplikovo :D
+	 */
+	public double [] unikatanNiz (double [] niz)
+	{
+		double tempNiz[] = new double [niz.length];
+		
+		//brojUnik broji unikatne brojeve
+		int brojUnik = 0;
+		//unesit u temp unikatne brojeve a na mjestima gdje se brojevi ponavljaju ostane default vrijednost 0.0
+		for (int i = 0; i < niz.length; i++) {
+			boolean nijeUnikat = false;
+			for (int j = 0; j < tempNiz.length; j++) {
+			
+				if(niz[i] == tempNiz[j]){
+					nijeUnikat = true;
+					break;
+					
+				}
+			}
+			
+			if(!nijeUnikat){
+				brojUnik++;
+				tempNiz[i] = niz[i];
+			}
+		}
+		//napravi novi niz za unikatne brojeve
+		double unikatanNiz[] = new double[brojUnik];
+		int brojac = 0;
+		//stavi unikatne brojeve u niz 
+		for (int i = 0; i < tempNiz.length ; i++) {
+			if(tempNiz[i] > 0){
+				unikatanNiz[brojac] = tempNiz[i];
+				brojac++;
+			}
+		}
+		//vrati niz brojeva
+		return unikatanNiz;
+		
+	}
 	
 
 }
