@@ -2,11 +2,11 @@
 public class Metode {
 	
 	public static double sum(double[] n) {
-		double max = n[0];
-		for (int i = 1; i < n.length; i++) {
-		    if (n[i] > max) max = n[i];
+		double sum = 0;
+		for (int i = 0; i < n.length; i++) {
+		    sum += n[i];
 		}
-		return max;
+		return sum;
 	}
 
 }
