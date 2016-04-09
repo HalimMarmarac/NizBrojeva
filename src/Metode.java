@@ -67,5 +67,12 @@ public class Metode {
 		
 	}
 	
+	//Ja sam još ljenji
+	
+	
+	public double najmanjiBroj(double[] niz){
+		niz = sortiraj(niz);
+		return(niz[0]);
+	}
 
 }
