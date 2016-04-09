@@ -27,7 +27,7 @@ public class OperacijeNadNizom {
 		// ostale metode
 		
 		double[] unikatan = m.unikatanNiz(n);
-		System.out.println("Sortiran niz brojeva je "+Arrays.toString(n));
+		System.out.println("Sortiran niz brojeva je "+ Arrays.toString(m.sortiraj(n)));
 		System.out.println("Unikatni brojevi u nizu su "+Arrays.toString(unikatan));
 		
 		System.out.println("Najveci broj u nizu je "+ m.najveciBroj(n));
